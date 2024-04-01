@@ -96,7 +96,7 @@ section {
 }
 
 .main__contenedor {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .main__contenedor h4 {
@@ -487,5 +487,9 @@ section {
     .tecnologia-icon .imagenes__icons{
         grid-template-columns: repeat(1, 2fr minmax(280px, auto));
         padding-left: 130px;  
+    }
+
+    .presentacion {
+        background: none;
     }
 }
