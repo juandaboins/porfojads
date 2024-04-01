@@ -24,17 +24,17 @@ body {
 /* HEADER */
 
 header {
-    position: fixed;
+    background-color: var(--color-primario);
+    position: sticky;
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 10002;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 16%;
-    background: transparent;
-    transition: all .5s ease;
+    padding: 10px 16%;
+    transition: background-color .4s ease-in-out;
 }
 
 header .logo {
@@ -56,7 +56,7 @@ header .logo .apellido {
     font-weight: 500;
     color: var(--color-quinto);
     margin-left: 40px;
-    transition: all .5s ease;
+    transition: color .4s ease-in-out;
 }
 
 .nav__list a:hover {
@@ -64,17 +64,16 @@ header .logo .apellido {
     text-shadow: 3px 3px 20px var(--color-secundario);
 }
 
+header .scrolled {
+    background: var(--color-primario);
+    opacity: 0.98;
+}
+
 #menu-icon {
     font-size: 30px;
     z-index: 10001;
     cursor: pointer;
     display: none;
-}
-
-header .sticky {
-    background: var(--color-primario);
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .2);
-    padding: 16px 16%;
 }
 
 /* MAIN */
