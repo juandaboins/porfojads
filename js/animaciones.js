@@ -1,9 +1,12 @@
-document.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
+let menu = document.querySelector('#menu-icon');
+let nav__list = document.querySelector('.nav__list');
 
-    if (window.scrollY > 0) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    nav__list.classList.toggle('active');
+};
+
+window.onscroll = () => {
+    menu.classList.remove('bx-x');
+    nav__list.classList.remove('active');
+};
