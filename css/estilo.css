@@ -5,7 +5,6 @@
     font-family: "Outfit", sans-serif;
     text-decoration: none;
     list-style: none;
-    scroll-behavior: smooth;
 }
 
 :root {
@@ -21,11 +20,15 @@ body {
     background-color: var(--color-primario);
 }
 
+section {
+    padding: 60px 16% 90px;
+}
+
 /* HEADER */
 
 header {
     background-color: var(--color-primario);
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     right: 0;
@@ -73,10 +76,6 @@ header .logo .apellido {
 /* MAIN */
 
 /* presentacion */
-
-section {
-    padding: 60px 16% 90px;
-}
 
 .presentacion {
     height: 100vh;
@@ -355,8 +354,7 @@ section {
     max-width: 750px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
-    row-gap: 10px; 
+    gap: 10px;
 }
 
 .imagenes__icons img {
@@ -438,11 +436,11 @@ section {
 @media (max-width: 950px){
 
     .section {
-        padding: 40px 5% 45px;
+        padding: 30px 5% 45px;
     }
 
-    .logotipo {
-        font-size: 20px;
+    .logo {
+        font-size: 16px;
     }
 
     .main__contenedor p {
@@ -474,6 +472,16 @@ section {
 
 @media (max-width: 680px){
 
+    .section {
+        padding: 15px 5% 25px;
+    }
+
+    .presentacion {
+        background: none;
+    }
+
+
+
     .main__contenedor h1, h4 {
         text-align: center;
     }
@@ -483,21 +491,8 @@ section {
         text-align: center;
     }
 
-    .redes__sociales {
-        display: flex;
-    }
-
-    .tecnologia-icon .imagenes__icons{
-        grid-template-columns: repeat(1, 2fr minmax(280px, auto));
-        padding-left: 130px;
-    }
-
-    .presentacion {
-        background: none;
-    }
-
-    #menu-icon {
-        display: block;
+    .tecnologia-icon .imagenes__icons {
+        grid-template-columns: repeat(1, 2fr minmax(150px, auto));
     }
 
     .nav__list {
@@ -524,5 +519,19 @@ section {
 
     .nav__list.active {
         right: 0;
+    }
+
+    .redes__sociales {
+        display: flex;
+    }
+
+    .redes__sociales a {
+        
+       
+    }
+
+    #menu-icon {
+        display: block;
+        color: var(--color-quinto);
     }
 }
