@@ -519,14 +519,7 @@ header .logo .apellido {
         right: 0;
     }
 
-    .redes__sociales {
-        display: contents;
-    }
-
-    .redes__sociales a {
-        align-items: center;
-        align-content: center;
-    }
+    
 
     #menu-icon {
         display: block;
