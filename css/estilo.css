@@ -480,8 +480,6 @@ header .logo .apellido {
         background: none;
     }
 
-
-
     .main__contenedor h1, h4 {
         text-align: center;
     }
@@ -522,12 +520,12 @@ header .logo .apellido {
     }
 
     .redes__sociales {
-        display: flex;
+        display: contents;
     }
 
     .redes__sociales a {
-        
-       
+        align-items: center;
+        align-content: center;
     }
 
     #menu-icon {
