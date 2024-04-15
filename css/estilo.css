@@ -470,7 +470,7 @@ header .logo .apellido {
     }
 }
 
-@media (max-width: 680px){
+@media (max-width: 680px) {
 
     .section {
         padding: 15px 5% 25px;
@@ -519,10 +519,14 @@ header .logo .apellido {
         right: 0;
     }
 
-    
-
     #menu-icon {
         display: block;
         color: var(--color-quinto);
+    }
+
+    .main__contenedor .redes__sociales {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
